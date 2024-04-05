@@ -42,7 +42,7 @@
 .dynamic-menu .menu-wrap {display: flex; justify-content: flex-end; align-items: center; gap: 5px;}
 .dynamic-menu .menu-wrap > * {display: block; animation: 1.5s linear 2.5s shake;}
 .dynamic-menu .menu-wrap > * img {height: 20px;}
-.navigation {position: absolute; bottom: 0; left: 0; width: 100%; z-index: 991; display: none;}
+.navigation {position: absolute; bottom: 0; left: 0; width: 100%; z-index: 991;}
 .navigation ul {position: absolute; width: 100%; padding: 10px; box-sizing: border-box; background-color: #fff; box-shadow: 0 0 5px rgba(0,0,0,0.2);}
 .navigation ul li {color: #333; font-weight: 800; font-size: 16px; position: relative; display: block; text-align: center;}
 .navigation ul li:hover {color: #836fff;}

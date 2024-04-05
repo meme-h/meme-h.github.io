@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>mh han</title>
+
+    <!-- CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">    
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- 아이콘 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- 라이브러리 -->
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.work-list li').click(function() {
+                const num = $('.work-list li').index($(this));
+
+                $('.phone-wrap').addClass('active')
+                $('.detail-wrap').addClass('active')
+                $('.work-list li').removeClass('active');
+                $('.detail-wrap > div').removeClass('on')
+
+                $('.work-list li:eq(' + num + ')').addClass('active');
+                $('.detail-wrap > div:eq(' + num + ')').addClass('on');
+            })
+
+            $('.close').click(function() {
+                $('.phone-wrap').removeClass('active')
+                $('.detail-wrap').removeClass('active')
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="phone-wrap">
+            <div id="phone">
+                <img src="./images/phone.png" alt="" class="phone-device">
+                <div class="dynamic-menu">
+                    <div class="menu-wrap">
+                        <a href="./index.html"><img src="./images/ico_home.png" alt=""></a>
+                        <span><img src="./images/ico_menu_color.png" alt=""></span>
+                    </div>
+                </div>
+                <div class="phone-top">
+                    <span>10:15</span>
+                    <div>
+                        <img src="./images/wifi.png" alt="" class="wifi">
+                        <img src="./images/ico_battery.png" alt="" class="battery">
+                    </div>
+                </div>
+                <div class="work-wrap">
+                    <div class="work-top content-top">
+                        <span>
+                            <a href="/index.html"><img src="./images/ico_prev.png" alt=""></a>
+                        </span>
+                        <h2>Works</h2>
+                        <span>편집</span>
+                    </div>
+                    <div class="work-list">
+                        <ul>
+                            <li>
+                                <div><img src="./images/work/thumb01.png" alt=""></div>
+                                <span>Adam Charger</span>
+                            </li>
+                            <li>
+                                <div><img src="./images/work/thumb02.png" alt=""></div>
+                                <span>KHGB</span>
+                            </li>
+                            <li>
+                                <div><img src="./images/work/thumb03.png" alt=""></div>
+                                <span>COME</span>
+                            </li>
+                            <li>
+                                <div><img src="./images/work/thumb04.png" alt=""></div>
+                                <span>BIORP</span>
+                            </li>
+                            <li>
+                                <div><img src="./images/work/thumb05.png" alt=""></div>
+                                <span>COCOA</span>
+                            </li>
+                            <li>
+                                <div><img src="./images/work/thumb06.png" alt=""></div>
+                                <span>사내 홈페이지</span>
+                            </li>
+                            <li>
+                                <div><img src="./images/work/thumb07.png" alt=""></div>
+                                <span>모두다중개</span>
+                            </li>
+                            <li>
+                                <div><img src="./images/work/thumb08.png" alt=""></div>
+                                <span>유니뎀</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="work-menu">
+                        <ul>
+                            <li>
+                                <img src="./images/ico_work1.png" alt="">
+                                <span>보관함</span>
+                            </li>
+                            <li>
+                                <img src="./images/ico_work2.png" alt="">
+                                <span>For You</span>
+                            </li>
+                            <li class="active">
+                                <img src="./images/ico_work3.png" alt="">
+                                <span>앨범</span>
+                            </li>
+                            <li>
+                                <img src="./images/ico_work4.png" alt="">
+                                <span>검색</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="detail-wrap">
+            <div>
+                <button class="close"><img src="./images/close_black.png" alt=""></button>
+                <div class="detail-con">
+                    <h2 class="detail-title">EV ECO</h2>
+                    <h3 class="sub-title">전기차 충전 서비스</h3>
+                    <div class="tag">
+                        <span>#사내프로젝트</span>
+                        <span>#어플리케이션</span>
+                        <span>#대시보드</span>
+                        <span>#반응형</span>
+                    </div>
+                    <div class="info">
+                        <p class="overview">
+                            전기차 충전 서비스 어플리케이션인 EV ECO의 퍼블리싱을 전담했습니다. <br>
+                            사용자 어플리케이션과 대시보드 형태의 관리자 전용 플랫폼 두가지 프로젝트에 모두 참여하였습니다.
+                            충전 화면에서 충전이 되고 있다는 인식을 주기 위해 애니메이션을 사용하였으며, 충전 기록을 한눈에 볼 수 있도록 마이페이지를 구현하였습니다.
+                            관리자 플랫폼은 데이터를 모니터링하고 관리해야 하는 특성 상 전체화면에서 모든 데이터들을 확인할 수 있도록 테이블 위주의 레이아웃을 구상하였습니다.
+                        </p>
+                        <div class="part-info">
+                            <dl>
+                                <dt>제작 기간</dt>
+                                <dd>2022.03 - 2023.09</dd>
+                                <dt>기여도</dt>
+                                <dd>퍼블리싱 100%</dd>
+                                <dt>사용 툴</dt>
+                                <dd>VS Code, Photoshop, Git</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="detail-img">
+                        <div class="grid3">
+                            <img src="./images/work/1_1.png" alt="">
+                            <img src="./images/work/1_2.png" alt="">
+                            <img src="./images/work/1_3.png" alt="">
+                        </div>
+                        <div><img src="./images/work/1_4.png" alt=""></div>
+                        <div><img src="./images/work/1_5.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="close"><img src="./images/close_black.png" alt=""></button>
+                <div class="detail-con">
+                    <h2 class="detail-title">KHGB</h2>
+                    <h3 class="sub-title">한국인간유전자은행 사이트 리뉴얼 <a href="https://genbank.kribb.re.kr" target="_blank" class="shortcut"><img src="./images/ico_shortcut.png" alt=""></a></h3>
+                    <div class="tag">
+                        <span>#웹페이지</span>
+                        <span>#반응형</span>
+                    </div>
+                    <div class="info">
+                        <p class="overview">
+                            한국인간유전자은행 사이트의 리뉴얼을 담당했습니다. <br>
+                            검색 기능을 많이 사용하는 사이트의 특징을 파악하여 메인 페이지 비주얼 슬라이드 섹션 중앙, 
+                            서브 페이지의 상단에 검색 input을 배치하여 어디서든 검색이 가능하도록 하였습니다.
+                        </p>
+                        <div class="part-info">
+                            <dl>
+                                <dt>제작 기간</dt>
+                                <dd>2021.06 - 2021.09</dd>
+                                <dt>기여도</dt>
+                                <dd>퍼블리싱 100%</dd>
+                                <dt>사용 툴</dt>
+                                <dd>VS Code, Photoshop, Git</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="detail-img">
+                        <div><img src="./images/work/2_1.jpg" alt=""></div>
+                        <div class="grid3"><img src="./images/work/2_2.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="close"><img src="./images/close_black.png" alt=""></button>
+                <div class="detail-con">
+                    <h2 class="detail-title">COME</h2>
+                    <h3 class="sub-title">미생물 중앙은행 사이트 리뉴얼 <a href="https://kctc.kribb.re.kr/come" target="_blank" class="shortcut"><img src="./images/ico_shortcut.png" alt=""></a></h3>
+                    <div class="tag">
+                        <span>#웹페이지</span>
+                        <span>#반응형</span>
+                    </div>
+                    <div class="info">
+                        <p class="overview">
+                            미생물 중앙은행 사이트의 리뉴얼에 참여했습니다. <br>
+                            새로운 디자인을 적용하면서 기존에 사용하던 자체 모듈을 유지하되 새로운 디자인에 적용하기 위해 테마를 추가로 생성하여 적용하였습니다.
+                        </p>
+                        <div class="part-info">
+                            <dl>
+                                <dt>제작 기간</dt>
+                                <dd>2022.05 - 2023.08</dd>
+                                <dt>기여도</dt>
+                                <dd>퍼블리싱 100%</dd>
+                                <dt>사용 툴</dt>
+                                <dd>VS Code, Photoshop, Figma, Git</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="detail-img">
+                        <div><img src="./images/work/3_1.png" alt=""></div>
+                        <div class="grid3"><img src="./images/work/3_2.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="close"><img src="./images/close_black.png" alt=""></button>
+                <div class="detail-con">
+                    <h2 class="detail-title">BIORP</h2>
+                    <h3 class="sub-title">생물자원 연구성과 홈페이지 리뉴얼 <a href="https://biorp.kribb.re.kr" target="_blank" class="shortcut"><img src="./images/ico_shortcut.png" alt=""></a></h3>
+                    <div class="tag">
+                        <span>#웹페이지</span>
+                        <span>#반응형</span>
+                    </div>
+                    <div class="info">
+                        <p class="overview">
+                            생물자원 연구성과 BIORP 사이트 리뉴얼을 담당했습니다. <br>
+                            퍼블리싱 뿐만 아니라 기획 및 디자인에도 참여하여 프로젝트 전반적인 부분을 담당했습니다.
+                        </p>
+                        <div class="part-info">
+                            <dl>
+                                <dt>제작 기간</dt>
+                                <dd>2023.05 - 2023.10</dd>
+                                <dt>기여도</dt>
+                                <dd>퍼블리싱 100%</dd>
+                                <dt>사용 툴</dt>
+                                <dd>VS Code, Photoshop, Figma, Git</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="detail-img">
+                        <div><img src="./images/work/4_1.png" alt=""></div>
+                        <div class="grid3"><img src="./images/work/4_2.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="close"><img src="./images/close_black.png" alt=""></button>
+                <div class="detail-con">
+                    <h2 class="detail-title">COCOA</h2>
+                    <h3 class="sub-title">기업 건전성 서비스</h3>
+                    <div class="tag">
+                        <span>#웹페이지</span>
+                        <span>#반응형</span>
+                    </div>
+                    <div class="info">
+                        <p class="overview">
+                            기업 건전성 및 현황에 대해 확인할 수 있는 서비스인 COCOA의 퍼블리싱에 참여했습니다. <br>
+                            Highcharts 라이브러리를 사용하여 기업 재무 데이터들을 다양하게 표현했습니다.
+                        </p>
+                        <div class="part-info">
+                            <dl>
+                                <dt>제작 기간</dt>
+                                <dd>2021.03 - 2022.09</dd>
+                                <dt>기여도</dt>
+                                <dd>퍼블리싱 100%</dd>
+                                <dt>사용 툴</dt>
+                                <dd>VS Code, Photoshop, Git</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="detail-img">
+                        <div><img src="./images/work/5_1.png" alt=""></div>
+                        <div class="grid3"><img src="./images/work/5_2.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="close"><img src="./images/close_black.png" alt=""></button>
+                <div class="detail-con">
+                    <h2 class="detail-title">사내 홈페이지</h2>
+                    <h3 class="sub-title">사내 홈페이지 리뉴얼 프로젝트 <a href="https://lineworld.co.kr" target="_blank" class="shortcut"><img src="./images/ico_shortcut.png" alt=""></a></h3>
+                    <div class="tag">
+                        <span>#웹페이지</span>
+                        <span>#반응형</span>
+                    </div>
+                    <div class="info">
+                        <p class="overview">
+                            사내 홈페이지 리뉴얼 프로젝트를 담당했습니다. <br>
+                            전체 디자인 및 퍼블리싱에 참여하였고, 메인 페이지 컨텐츠 기획에도 참여했습니다.
+                        </p>
+                        <div class="part-info">
+                            <dl>
+                                <dt>제작 기간</dt>
+                                <dd>2023.05 - 2023.06</dd>
+                                <dt>기여도</dt>
+                                <dd>퍼블리싱 100%, 디자인 85%</dd>
+                                <dt>사용 툴</dt>
+                                <dd>VS Code, Photoshop, Git</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="close"><img src="./images/close_black.png" alt=""></button>
+                <div class="detail-con">
+                    <h2 class="detail-title">모두다중개</h2>
+                    <h3 class="sub-title">모두다중개 어플리케이션 퍼블리싱</h3>
+                    <div class="tag">
+                        <span>#어플리케이션</span>
+                    </div>
+                    <div class="info">
+                        <p class="overview">
+                            사내 홈페이지 리뉴얼 프로젝트를 담당했습니다. <br>
+                            전체 디자인 및 퍼블리싱에 참여하였고, 메인 페이지 컨텐츠 기획에도 참여했습니다.
+                        </p>
+                        <div class="part-info">
+                            <dl>
+                                <dt>제작 기간</dt>
+                                <dd>2023.11 - 2024.01</dd>
+                                <dt>기여도</dt>
+                                <dd>퍼블리싱 100%, 디자인 85%</dd>
+                                <dt>사용 툴</dt>
+                                <dd>VS Code, Photoshop, Git</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="close"><img src="./images/close_black.png" alt=""></button>
+                <div class="detail-con">
+                    <h2 class="detail-title">유니뎀</h2>
+                    <h3 class="sub-title">유니뎀 홈페이지 퍼블리싱</h3>
+                    <div class="tag">
+                        <span>#웹페이지</span>
+                        <span>#반응형</span>
+                    </div>
+                    <div class="info">
+                        <p class="overview">
+                            사내 홈페이지 리뉴얼 프로젝트를 담당했습니다. <br>
+                            전체 디자인 및 퍼블리싱에 참여하였고, 메인 페이지 컨텐츠 기획에도 참여했습니다.
+                        </p>
+                        <div class="part-info">
+                            <dl>
+                                <dt>제작 기간</dt>
+                                <dd>2024.03</dd>
+                                <dt>기여도</dt>
+                                <dd>퍼블리싱 100%, 디자인 85%</dd>
+                                <dt>사용 툴</dt>
+                                <dd>VS Code, Photoshop, Git</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

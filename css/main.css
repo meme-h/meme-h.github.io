@@ -26,7 +26,6 @@
 
 /* 메인 */
 .wrap {background-color: #000; position: relative; overflow-y: auto;}
-/* .title {font-size: 100px; font-weight: 800; position: absolute; top: 50%; right: 250px; transform: translateY(-50%); text-align: left;} */
 .phone-wrap {margin: 0 auto; text-align: center; width: 100%; height: 80vh; max-height: 746px; max-width: 390px; overflow: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 #phone {height: 100%; animation: fade .3s;}
 #phone > img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%;;}
@@ -36,6 +35,12 @@
 .app-wrap ul {width: 100%; display: grid; grid-template-columns: repeat(4, 1fr); column-gap: 25px;}
 .app-wrap ul li img {width: 100%; border-radius: 15px;}
 .app-wrap ul li span {display: block; color: #fff; text-align: center; margin-top: 4px; font-size: 13px; font-weight: 300;}
+.memo {position: relative; margin-top: 20px; width: 100%; background-color: #fff; border-radius: 20px; height: 200px;}
+.memo .memo-header {background: linear-gradient(#FDDE5E, #FFC800); height: 35px; padding: 10px 0; border-top-left-radius: 20px; border-top-right-radius: 20px; box-sizing: border-box;}
+.memo .memo-body {padding: 15px 18px; box-sizing: border-box; text-align: left; color: #454545;}
+.memo .memo-body h3 {font-size: 24px; line-height: 125%; margin-bottom: 6px;}
+.memo .memo-body p {font-size: 14px; font-weight: 400; line-height: 125%;}
+.memo span {position: absolute; color: #fff; font-size: 13px; bottom: -20px; left: 50%; transform: translateX(-50%);}
 
 /* 공통 */
 .dynamic-menu {position: absolute; top: 20px; max-width: 145px; width: 38%; z-index: 990; left: 50%; transform: translateX(-50%); padding: 0 15px; box-sizing: border-box;}

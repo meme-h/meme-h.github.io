@@ -110,7 +110,7 @@
 .work-menu ul li.active span {color: #037dff;}
 .phone-wrap {transition: all 1s ease;}
 .phone-wrap.active {left: 20%; transition: all 1s ease;}
-.detail-wrap {position: absolute; left: 33%; width: 60vw; height: 100dvh; z-index: 99; top: 50%; transform: translateY(-50%); display: none; overflow-y: auto;}
+.detail-wrap {position: absolute; left: 33%; width: 60vw; height: 100vh; z-index: 99; top: 50%; transform: translateY(-50%); display: none; overflow-y: auto;}
 .detail-wrap.active {display: block;}
 .detail-wrap > div {display: none; position: absolute; top: 0; left: 0;}
 .detail-wrap > div.on {display: block; animation: fade 1.5s; background-color: transparent; width: 100%; height: 100%;}
@@ -159,7 +159,7 @@
 
     /* works */
     .phone-wrap.active {left: 50%}
-    .detail-wrap {left: 0%; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.85);}
+    .detail-wrap {left: 0%; width: 100vw; height: 100dvh; background-color: rgba(0,0,0,0.85);}
     .detail-wrap .detail-con {padding: 30px 20px;}
     .detail-wrap .detail-con .sub-title, .detail-wrap .detail-con .tag {margin-bottom: 20px;}
     .detail-wrap .detail-con .part-info dt {width: 20%;}

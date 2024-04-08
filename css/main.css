@@ -55,8 +55,10 @@
 .navigation ul li span::after {position: absolute; content: ''; display: block; background-color: #836fff; width: 0%; height: 2px; bottom: -4px;}
 .navigation ul li:not(:last-child) {margin-bottom: 1.5vh;}
 .navigation ul li span {width: fit-content; display: inline-block;}
-.phone-top {position: absolute; top: 30px; width: 100%; padding: 0 40px 0 50px; box-sizing: border-box; font-size: 14px; color: #000; font-weight: 500; display: flex; align-items: center; justify-content: space-between; z-index: 9}
+.phone-top {position: absolute; top: 25px; width: 100%; padding: 0 45px 0 50px; box-sizing: border-box; font-size: 14px; color: #000; font-weight: 500; display: flex; align-items: center; justify-content: space-between; z-index: 9}
 .phone-top div {display: flex; align-items: center; gap: 5px;}
+.phone-top .home img {height: 18px;}
+.phone-top .menu img {height: 18px;}
 .phone-top .wifi {height: 15px;}
 .phone-top .battery {height: 20px;}
 .content-top {width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 30px 15px 12px 10px; box-sizing: border-box; border-top-left-radius: 40px; border-top-right-radius: 40px;}

@@ -60,11 +60,13 @@
 .navigation ul li:not(:last-child) {margin-bottom: 1.5vh;}
 .navigation ul li span {width: fit-content; display: inline-block;}
 .phone-top {position: absolute; top: 25px; width: 100%; padding: 0 45px 0 50px; box-sizing: border-box; font-size: 14px; color: #000; font-weight: 500; display: flex; align-items: center; justify-content: space-between; z-index: 9}
-.phone-top.skills {color: #fff;}
+.phone-top.white {color: #fff;}
 .phone-top div {display: flex; align-items: center; gap: 5px;}
-.phone-top .home img, .phone-top .menu img {height: 18px;}
+.phone-top .dynamic {font-size: 12px; background-color: #000; border-radius: 25px; padding: 3px 12px; box-sizing: border-box; min-width: 115px; color: #eee; font-weight: 300; justify-content: space-between;}
+.phone-top .dynamic .menu, .phone-top .dynamic .menu img {height: 15px;}
+.phone-top.white .dynamic {background-color: #fff; color: #000;}
 .phone-top .wifi {height: 15px;}
-.phone-top .battery {height: 20px;}
+.phone-top .battery {height: 22px;}
 .content-top {width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 30px 15px 12px 10px; box-sizing: border-box; border-top-left-radius: 40px; border-top-right-radius: 40px;}
 .content-top span {z-index: 3;}
 .content-top span a {display: block;}

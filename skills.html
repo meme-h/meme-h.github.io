@@ -46,22 +46,25 @@
 <body>
     <div class="wrap">
         <div class="phone-wrap">
-            <div class="menu-popup">
-                <ul>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./skills.html">Skiils</a></li>
-                    <li><a href="./works.html">Works</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </div>
             <div id="phone">
+                <div class="menu-popup">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./skills.html">Skiils</a></li>
+                        <li><a href="./works.html">Works</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
                 <img src="./images/phone.png" alt="" class="phone-device">
-                <div class="phone-top skills">
+                <div class="phone-top white">
                     <span>10:15</span>
-                    <div>
-                        <a class="home" href="./index.html"><img src="./images/ico_home.png" alt=""></a>
+                    <div class="dynamic">
                         <span class="menu"><img src="./images/ico_menu_color.png" alt=""></span>
-                        <!-- <img src="./images/wifi.png" alt="" class="wifi"> -->
+                        <span>MENU</span>
+                    </div>
+                    <div class="phone-top-info">
+                        <img src="./images/wifi_white.png" alt="" class="wifi">
                         <img src="./images/ico_battery_white.png" alt="" class="battery">
                     </div>
                 </div>
@@ -131,10 +134,6 @@
                                     <div><img src="./images/ico_license.png" alt=""></div>
                                     <span>정보처리기사</span>
                                 </li>
-                                <!-- <li>
-                                    <div><img src="./images/ico_license.png" alt=""></div>
-                                    <span>2종보통 운전면허</span>
-                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -150,38 +149,6 @@
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 <script>
-    function renderIcons() {
-        this.series.forEach(series => {
-            if (!series.icon) {
-                series.icon = this.renderer
-                    .text(
-                        `<i class="fa fa-${series.options.custom.icon}"></i>`,
-                        0,
-                        0,
-                        true
-                    )
-                    .attr({
-                        zIndex: 10
-                    })
-                    .css({
-                        color: series.options.custom.iconColor,
-                        fontSize: '1.5em'
-                    })
-                    .add(this.series[2].group);
-            }
-            series.icon.attr({
-                x: this.chartWidth / 2 - 15,
-                y: this.plotHeight / 2 -
-                    series.points[0].shapeArgs.innerR -
-                    (
-                        series.points[0].shapeArgs.r -
-                        series.points[0].shapeArgs.innerR
-                    ) / 2 +
-                    8
-            });
-        });
-    }
-
     const trackColors = Highcharts.getOptions().colors.map(color =>
         new Highcharts.Color(color).setOpacity(0.3).get()
     );
@@ -198,9 +165,6 @@
             spacingBottom: 0,
             spacingLeft: 0,
             plotBorderWidth: 0,
-            events: {
-                render: renderIcons
-            },
             backgroundColor: 'transparent'
         },
 
@@ -224,17 +188,17 @@
         pane: {
             startAngle: 0,
             endAngle: 360,
-            background: [{ // Track for Conversion
+            background: [{ 
                 outerRadius: '112%',
                 innerRadius: '88%',
                 backgroundColor: 'transparent',
                 borderWidth: 0
-            }, { // Track for Engagement
+            }, { 
                 outerRadius: '87%',
                 innerRadius: '63%',
                 backgroundColor: 'transparent',
                 borderWidth: 0
-            }, { // Track for Feedback
+            }, {
                 outerRadius: '62%',
                 innerRadius: '38%',
                 backgroundColor: 'transparent',
@@ -268,10 +232,6 @@
                 innerRadius: '88%',
                 y: 95
             }],
-            // custom: {
-            //     icon: 'filter',
-            //     iconColor: '#303030'
-            // }
         }, {
             name: 'css',
             data: [{
@@ -280,10 +240,6 @@
                 innerRadius: '63%',
                 y: 95
             }],
-            // custom: {
-            //     icon: 'comments-o',
-            //     iconColor: '#ffffff'
-            // }
         }, {
             name: 'js',
             data: [{
@@ -292,10 +248,6 @@
                 innerRadius: '38%',
                 y: 90
             }],
-            // custom: {
-            //     icon: 'commenting-o',
-            //     iconColor: '#303030'
-            // }
         }]
     });
 

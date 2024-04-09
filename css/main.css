@@ -43,10 +43,18 @@
 .memo span {position: absolute; color: #fff; font-size: 13px; bottom: -20px; left: 50%; transform: translateX(-50%);}
 
 /* 공통 */
-.dynamic-menu {position: absolute; top: 20px; max-width: 145px; width: 38%; z-index: 990; left: 50%; transform: translateX(-50%); padding: 0 15px; box-sizing: border-box;}
+/* .dynamic-menu {position: absolute; top: 20px; max-width: 145px; width: 38%; z-index: 990; left: 50%; transform: translateX(-50%); padding: 0 15px; box-sizing: border-box;}
 .dynamic-menu .menu-wrap {display: flex; justify-content: flex-end; align-items: center; gap: 5px;}
 .dynamic-menu .menu-wrap > * {display: block; animation: 1.5s linear 2.5s shake;}
-.dynamic-menu .menu-wrap > * img {height: 20px;}
+.dynamic-menu .menu-wrap > * img {height: 20px;} */
+.menu-popup {width: 100%; height: 100%; position: absolute; background-color: rgba(0,0,0,0.2); z-index: 999; display: none;}
+.menu-popup.active {display: block;}
+.menu-popup ul {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; border-radius: 20px; width: 50%;}
+.menu-popup ul li:not(:last-child) {border-bottom: 1px solid #ddd;}
+.menu-popup ul li a {display: block; color: #007AFF; padding: 12px 0;}
+.menu-popop ul li:active, .menu-popup ul li:hover, .menu-popup ul li:focus {background-color: #efefef;}
+.menu-popup ul li:first-child {border-top-left-radius: 20px; border-top-right-radius: 20px;}
+.menu-popup ul li:last-child {border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;}
 .navigation {position: absolute; bottom: 0; left: 0; width: 100%; z-index: 991;}
 .navigation ul {position: absolute; width: 100%; padding: 10px; box-sizing: border-box; background-color: #fff; box-shadow: 0 0 5px rgba(0,0,0,0.2);}
 .navigation ul li {color: #333; font-weight: 800; font-size: 16px; position: relative; display: block; text-align: center;}

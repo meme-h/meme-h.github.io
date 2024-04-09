@@ -43,13 +43,9 @@
 .memo span {position: absolute; color: #fff; font-size: 13px; bottom: -20px; left: 50%; transform: translateX(-50%);}
 
 /* 공통 */
-/* .dynamic-menu {position: absolute; top: 20px; max-width: 145px; width: 38%; z-index: 990; left: 50%; transform: translateX(-50%); padding: 0 15px; box-sizing: border-box;}
-.dynamic-menu .menu-wrap {display: flex; justify-content: flex-end; align-items: center; gap: 5px;}
-.dynamic-menu .menu-wrap > * {display: block; animation: 1.5s linear 2.5s shake;}
-.dynamic-menu .menu-wrap > * img {height: 20px;} */
 .menu-popup {width: 100%; height: 100%; position: absolute; background-color: rgba(0,0,0,0.2); z-index: 999; display: none;}
 .menu-popup.active {display: block;}
-.menu-popup ul {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; border-radius: 20px; width: 50%;}
+.menu-popup ul {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; border-radius: 20px; width: 55%;}
 .menu-popup ul li:not(:last-child) {border-bottom: 1px solid #ddd;}
 .menu-popup ul li a {display: block; color: #007AFF; padding: 12px 0;}
 .menu-popop ul li:active, .menu-popup ul li:hover, .menu-popup ul li:focus {background-color: #efefef;}
@@ -64,9 +60,9 @@
 .navigation ul li:not(:last-child) {margin-bottom: 1.5vh;}
 .navigation ul li span {width: fit-content; display: inline-block;}
 .phone-top {position: absolute; top: 25px; width: 100%; padding: 0 45px 0 50px; box-sizing: border-box; font-size: 14px; color: #000; font-weight: 500; display: flex; align-items: center; justify-content: space-between; z-index: 9}
+.phone-top.skills {color: #fff;}
 .phone-top div {display: flex; align-items: center; gap: 5px;}
-.phone-top .home img {height: 18px;}
-.phone-top .menu img {height: 18px;}
+.phone-top .home img, .phone-top .menu img {height: 18px;}
 .phone-top .wifi {height: 15px;}
 .phone-top .battery {height: 20px;}
 .content-top {width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 30px 15px 12px 10px; box-sizing: border-box; border-top-left-radius: 40px; border-top-right-radius: 40px;}
@@ -101,6 +97,37 @@
 .about-send .input {width: calc(100% - 40px);}
 .about-send .input input {width: 100%; border: 1px solid #ccc; color: #333; border-radius: 25px; padding: 10px 15px; box-sizing: border-box;}
 .about-send .input input::placeholder {color: #ccc;}
+
+/* skills */
+.skill-wrap {width: 100%; height: 100%; position: relative; padding: 18px 20px 5px 20px; box-sizing: border-box; background-color: #000; text-align: left;}
+.skill-top {padding-top: 50px;}
+.skill-main {padding: 0 20px 20px; box-sizing: border-box; position: relative; z-index: 3; overflow-y: auto; height: calc(100% - 60px); background-color: #000; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;}
+.skill-main > div:not(:last-child) {margin-bottom: 25px;}
+.skill-profile {box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;}
+.skill-profile p {font-size: 13px; color: #7f7f7f; margin-bottom: 6px;}
+.skill-profile h2 {font-size: 30px; color: #fff;}
+.skill-profile img {height: 30px;}
+.skill-title {font-size: 24px; color: #fff; margin-bottom: 6px; font-weight: 600;}
+.skill-box-wrap .skill-chart {background-color: #1c1c1d; border-top-left-radius: 20px; border-top-right-radius: 20px; padding: 20px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center;}
+.skill-box-wrap .skill-chart .number div:not(:last-child) {margin-bottom: 5px;}
+.skill-box-wrap .skill-chart .number div span {display: block; line-height: 120%; color: #fff;}
+.skill-box-wrap .skill-chart .number div:nth-child(1) .value {color: #FA114E;}
+.skill-box-wrap .skill-chart .number div:nth-child(2) .value {color: #A6FF00;}
+.skill-box-wrap .skill-chart .number div:nth-child(3) .value {color: #03fff6;}
+.skill-box-wrap .skill-sub {background-color: #1c1c1d; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; padding: 14px 20px; box-sizing: border-box; display: flex; justify-content: space-between; margin-top: 2px; gap: 5px;}
+.skill-box-wrap .skill-sub .var {color: #fff; font-size: 14px; margin-bottom: 5px; display: block;}
+.skill-box-wrap .skill-sub .value {color: #828282; font-size: 17px;}
+.skill-main .tool-box ul {display: grid; grid-template-columns: repeat(4, 1fr); column-gap: 12px;}
+.skill-main .tool-box ul li {background-color: #1c1c1d; border-radius: 11px; position: relative; width: 100%; padding: 10px; box-sizing: border-box;}
+.skill-main .tool-box ul li::after {content: ''; display: block; padding-bottom: 100%;}
+.skill-main .tool-box ul li img {position: absolute; width: 70%; height: auto;}
+.skill-main .license-box ul li {background-color: #1c1c1d; border-radius: 11px; padding: 15px 12px; box-sizing: border-box; display: flex; gap: 12px; align-items: center;}
+.skill-main .license-box ul li:not(:last-child) {margin-bottom: 10px;}
+.skill-main .license-box ul li div {width: 42px; height: 42px; border-radius: 100%; background: linear-gradient(to right, rgba(166,255,0,0.31), rgba(0,0,0,0.36)); display: flex; align-items: center; justify-content: center;}
+.skill-main .license-box ul li div img {height: 24px;}
+.skill-main .license-box ul li span {color: #fff; font-size: 15px;}
+.highcharts-button-box, .highcharts-button-symbol, .highcharts-credits {display: none;}
+#container {width: fit-content;}
 
 /* works */
 .work-wrap {width: 100%; height: 100%; position: relative; padding: 18px 20px 5px 20px; box-sizing: border-box;}
@@ -146,7 +173,7 @@
 /* contact */
 .contact-wrap {width: 100%; height: 100%; position: relative; padding: 18px 20px 5px 20px; box-sizing: border-box;}
 .contact-top {padding-top: 40px; background-color: #fff; border-top-left-radius: 40px; border-top-right-radius: 40px;}
-.map {width: 100%; height: 180px; z-index: 0;}
+.map {width: 100%; height: 180px; z-index: 0; overflow: hidden;}
 .contact-info {background-color: #F7F7F5; padding: 22px 15px; box-sizing: border-box; height: calc(100% - 230px); border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; margin-top: -1px; text-align: left; z-index: 3; position: relative; overflow-y: auto;}
 .contact-info span {display: block; line-height: 120%;}
 .contact-info .name {font-size: 30px; font-weight: 400; margin-bottom: 4px;}

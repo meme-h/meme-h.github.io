@@ -1,99 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-    <meta name="title" content="meme-h | 웹 포트폴리오">
-    <meta name="description" content="한미현 - 웹 포트폴리오">
-    <meta name="keywords" content="웹 퍼블리셔, 퍼블리셔, 웹 퍼블리셔 포트폴리오, 경력직 퍼블리셔, 포트폴리오, 웹 포트폴리오, html, css, html5, css3, UI, UX, 한미현, web portfolio, web publisher">
-    <meta name="Reply-to" content="makehope1015@gmail.com">
-    <meta name="robots" content="ALL">
+    <meta name="title" content="랭코드 | 대화를 통한 인간과 AI의 협력">
+    <meta name="description" content="최신 기술 기반 개발 기획 및 전략 수립 컨설팅, 대화형 AI 기반 통합업무환경, 클라우드 서비스 제공 및 관리">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="meme-h | 웹 포트폴리오">
-    <meta property="og:description" content="한미현 - 웹 퍼블리셔 포트폴리오">
-    <meta property="og:image" content="https://meme-h.github.io/images/meta_img.png">
+    <meta property="og:url" content="https://langcode.io">
+    <meta property="og:title" content="랭코드 | 대화를 통한 인간과 AI의 협력">
+    <meta property="og:description" content="최신 기술 기반 개발 기획 및 전략 수립 컨설팅, 대화형 AI 기반 통합업무환경, 클라우드 서비스 제공 및 관리">
+    <meta property="og:image" content="./images/langcode_logo.png">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="Korean">
-    <title>meme-h | 웹 포트폴리오</title>
+    <title>랭코드 | 대화를 통한 인간과 AI의 협력</title>
 
-    <!-- CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/main.css">    
+    <link rel="stylesheet" href="./index.css">    
 
-    <!-- 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css" />
-	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- 아이콘 -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-    <!-- 파비콘 -->
-    <link rel="shortcut icon" href="./images/favicon/favicon.ico">
-    <link rel="icon" href="./images/favicon/favicon.png">
-    <link rel="manifest" href="./images/favicon/manifest.json">
-
-    <!-- 라이브러리 -->
-	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script src="./js/jquery-3.5.1.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./index.js"></script>
+    
 </head>
 <body>
     <div class="wrap">
-        <div class="phone-wrap">
-            <div id="phone">
-                <div class="phone-top white">
-                    <span>10:15</span>
-                    <div>
-                        <img src="./images/wifi_white.png" alt="" class="wifi">
-                        <img src="./images/ico_battery_white.png" alt="" class="battery">
-                    </div>
-                </div>
-                <img src="./images/phone_img.png" alt="" class="phone-device">
-                <div class="app-wrap">
-                    <ul>
-                        <li>
-                            <a href="./about.html">
-                                <img src="./images/app_message.png" alt="">
-                                <span>About</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./skills.html">
-                                <img src="./images/app_fitness.png" alt="">
-                                <span>Skills</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./works.html">
-                                <img src="./images/app_album.png" alt="">
-                                <span>Works</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./contact.html">
-                                <img src="./images/app_map.png" alt="">
-                                <span>Contact</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="memo">
-                        <div class="memo-header"></div>
-                        <div class="memo-body">
-                            <h3>HMH's Web Portfolio</h3>
-                            <p>Web Publisher <br>makehope1015@gmail.com</p>
-                        </div>
-                        <span>메모</span>
-                    </div>
+        <header id="header">
+            <div class="header-wrap con">
+                <h1 class="logo"><a href="./index.html"><img src="./images/langcode_logo.png" alt="langcode logo"></a></h1>
+                <div class="header-link">
+                    <span>랭코드 웹사이트 <a href="https://lancode.io"><img src="./images/external-link-alt.png" alt="link to langcode website"></a></span>
+                    <span>랭코드 링크드인 <a href="https://lancode.io"><img src="./images/external-link-alt.png" alt="link to langcode linkedin"></a></span>
                 </div>
             </div>
-        </div>
-        <!-- <div class="title"><h1>HMH's <br>Portfolio</h1></div> -->
+        </header>
+        <main>
+            <section class="sec sec1 bg-primary">
+                <div class="con">
+                    <div class="title">
+                        <p class="sub">Business Innovation through Conversational AI Platform</p>
+                        <p class="main">대화를 통한 인간과 AI의 협력</p>
+                    </div>
+                    <img src="./images/cxp_feature01.png" alt="cxp feature">
+                </div>
+            </section>
+            <section class="sec sec2">
+                <div class="con">
+                    <div class="business">
+                        <p class="h3">혁신적인 비즈니스</p>
+                        <div class="grid grid3">
+                            <div class="grid-item">
+                                <p class="txt-primary">Integration & Generation</p>
+                                <span>기업 내부 데이터 통합 및 실시간 학습이 가능한 랭코드 CXP와 자연스러운 문장 생성이 가능한 ChatGPT의 연계를 통한 맞춤형 답변 제공</span>
+                            </div>
+                            <div class="grid-item">
+                                <p class="txt-primary">Reliability</p>
+                                <span>원본 문서 제공 및 문서 하이라이트를 통한 명확하고 직관적인 근거 제공</span>
+                            </div>
+                            <div class="grid-item">
+                                <p class="txt-primary">Automation</p>
+                                <span>AI 봇의 제작, 학습, 관리 프로세스 전과정을 자동화 및 최적화하여 누구나 사용하기 편리한 랭코드 CXP 솔루션</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech">
+                        <p class="h3">기술과 서비스</p>
+                        <ul class="tab-menu">
+                            <li class="active">CXP</li>
+                            <li>CSP</li>
+                            <li>Consulting</li>
+                        </ul>
+                        <div class="tab-con">
+                            <div class="on">
+                                <p class="h3">AI 기술을 통해 더 나은 세상을 만듭니다.</p>
+                                <button class="btn bg-primary">CXP 더 알아보기</button>
+                                <img src="./images/tech_01.png" alt="cxp image">
+                            </div>
+                            <div>
+                                <p class="h3">Azure 클라우드 서비스 제공과 관리를 도와드립니다.</p>
+                                <button class="btn bg-primary">CSP 더 알아보기</button>
+                                <img src="./images/tech_02.png" alt="csp image">
+                            </div>
+                            <div>
+                                <p class="h3">최신 AI 트랜드와 기술 최적화를 위한 전문 컨설팅 서비스를 제공합니다.</p>
+                                <button class="btn bg-primary">Consulting 더 알아보기</button>
+                                <img src="./images/tech_03.png" alt="consulting image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="grid grid3">
+                            <div class="grid-item">
+                                <img src="./images/service_01.png" alt="image about compliance">
+                                <p>국제적, 지역적 업계 규정과<br>표준을 준수하여 신뢰성 보장</p>
+                                <a href="" class="link">Compliance에 대해 더 알아보기🔎</a>
+                            </div>
+                            <div class="grid-item">
+                                <img src="./images/service_02.png" alt="icon image about rbac">
+                                <p>롤-베이스 접근 제한으로<br>사용자 관리를 더욱 편안하게</p>
+                                <a href="" class="link">RBAC에 대해 더 알아보기🔎</a>
+                            </div>
+                            <div class="grid-item">
+                                <img src="./images/service_03.png" alt="image about multi llm">
+                                <p>편리한 봇 생성과 다양한 LLM<br>연동을 통한 사용자 맞춤형 봇 빌드</p>
+                                <a href="" class="link">Multi LLM에 대해 더 알아보기🔎</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec sec3 bg-primary">
+                <div class="con">
+                    <p class="h3">Industry</p>
+                    <p class="sec-sub">랭코드 CXP는 다양한 업종의 기업 환경을 개선하고 혁신하고 있습니다.</p>
+                    <div class="industry">
+                        <div class="grid grid4">
+                            <div class="grid-item">
+                                <img src="./images/industry_01.png" alt="icon image about financial of langcode industry">
+                                <p class="title">Financial</p>
+                                <span class="desc">문서의 보안과 클라우드에 보수적인 금융권의 특성에 맞춰 중계 모니터링 구축을 통한 보안 강화</span>
+                            </div>
+                            <div class="grid-item">
+                                <img src="./images/industry_02.png" alt="icon image about manufacture of langcode industry">
+                                <p class="title">Manufacture</p>
+                                <span class="desc">다양한 형태의 비정형 문서를 효과적으로 수집하여 파편화되어 있는 데이터를 수집, 이를 통해 다양한 매뉴얼 및 제조 과정 간소화</span>
+                            </div>
+                            <div class="grid-item">
+                                <img src="./images/industry_03.png" alt="icon image about telecom of langcode industry">
+                                <p class="title">Telecom</p>
+                                <span class="desc">방대한 내용의 매뉴얼과 자주 변경되는 규정들을 실시간으로 학습하여 대화형 AI를 통한 전사적으로 동기화</span>
+                            </div>
+                            <div class="grid-item">
+                                <img src="./images/industry_04.png" alt="icon image about distribution of langcode industry">
+                                <p class="title">Distribution</p>
+                                <span class="desc">실시간 학습을 통한 유통 과정 및 상태 업데이트와 STT & TTS 기술을 활용해 배송 업무 중 질의응답 편리화</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec sec4">
+                <div class="con">
+                    <p class="h2">Contact Us</p>
+                    <p class="sec-sub">전략, 설계, 개발, 운영 등 비즈니스 혁신을 위한 모든 문의를 환영합니다.</p>
+                    <div class="form-contact">
+                        <form action="">
+                            <div class="form-item">
+                                <label for="">회사명</label>
+                                <input type="text" placeholder="회사명">
+                            </div>
+                            <div class="form-item">
+                                <label for="">성함</label>
+                                <input type="text" placeholder="성함">
+                            </div>
+                            <div class="form-item">
+                                <label for="">이메일</label>
+                                <input type="text" placeholder="abced@langcode.io">
+                            </div>
+                            <div class="form-item">
+                                <label for="">전화번호</label>
+                                <input type="text" placeholder="010-0000-0000">
+                            </div>
+                            <div class="form-item">
+                                <label for="">문의 내용</label>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="문의 내용"></textarea>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary">문의하기</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
 </body>
 </html>
